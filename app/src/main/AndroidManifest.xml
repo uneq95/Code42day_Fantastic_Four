@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".LinkedInProfileVew"
-            android:label="@string/app_name" >
+            android:label="LinkedInProfile" >
         </activity>
         <activity
             android:name=".SocialMediaLinks"
@@ -32,7 +32,27 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name=".TwitterLoginActivity"
+            android:label="TwitterLogin" >
+            <intent-filter>
+                <action android:name="com.socialmedia.integration.TwitterLoginActivity"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            <data android:scheme="app" android:host="twitter" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TwitterProfileView"
+            android:label="@string/title_activity_twitter_profile_view" >
+        </activity>
+        <activity
+            android:name=".GoogleLogIn"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".GoogleProf"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

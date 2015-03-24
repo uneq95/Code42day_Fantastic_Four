@@ -31,7 +31,8 @@ public class SocialMediaLinks extends ActionBarActivity {
                     case 0: startActivity(new Intent(SocialMediaLinks.this,LinkedInLoginActivity.class));break;
                     case 1: //startActivity(new Intent(SocialMediaLinks.this,TwitterActivity.class));
                         Toast.makeText(getBaseContext(),"Work in Progress!! Please try Later",Toast.LENGTH_SHORT).show(); break;
-                    case 2: Toast.makeText(getBaseContext(),"Work in Progress!! Please try Later",Toast.LENGTH_SHORT).show(); break;
+                    case 2:Toast.makeText(getBaseContext(),"returning null verifier",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SocialMediaLinks.this, GoogleLogIn.class)); break;
                     case 3: Toast.makeText(getBaseContext(),"Work in Progress!! Please try Later",Toast.LENGTH_SHORT).show(); break;
                     case 4: Toast.makeText(getBaseContext(),"Work in Progress!! Please try Later",Toast.LENGTH_SHORT).show(); break;
 
